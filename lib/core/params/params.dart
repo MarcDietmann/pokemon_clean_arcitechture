@@ -10,8 +10,10 @@ class PokemonParams {
 }
 
 class PokemonImageParams {
-  final String? path;
+  final String name;
+  final String imageUrl;
   const PokemonImageParams({
-    this.path,
+    required this.imageUrl,
+    required this.name,
   });
 }

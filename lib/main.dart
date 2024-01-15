@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mapp_clean_architecture/features/pokemon_image/presentation/providers/pokemon_image_provider.dart';
 import 'package:provider/provider.dart';
 import 'features/pokemon/presentation/providers/pokemon_provider.dart';
 import 'features/pokemon/presentation/providers/selected_pokemon_item_provider.dart';
@@ -24,6 +25,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => SelectedPokemonItemProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => PokemonImageProvider(),
         ),
       ],
       child: MaterialApp(
